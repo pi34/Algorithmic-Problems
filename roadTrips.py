@@ -24,21 +24,42 @@ def roadTrip():
 
         MNList.sort()
 
-        l = 0
-        n = 0
         i = 0
+        dones = 0
 
         marked = []
 
-        tsum
+        tsum = 0
 
         while i < (K//2):
 
-            tsum = 0
-            
-            curr = MNList[i][1]
-            arr = adjMatrix[curr]
+            if i not in marked:
 
-            for item in arr:
-                marked.append(item)
-                tsum = tsum + NList[item]
+                curr = MNList[i][1]
+                arr = adjMatrix[curr]
+
+                tsum = tsum + curr[0]
+
+                for item in arr:
+                    marked.append(item)
+                    tsum = tsum + NList[item]
+
+                dones = dones + 1
+
+            if len(MNList)-i not in marked:
+
+                curr = MNList[len(MNList)-i][1]
+                arr = adjMatrix[curr]
+
+                tsum = tsum + curr[0]
+
+                for item in arr:
+                    marked.append(item)
+                    tsum = tsum + NList[item]
+
+                dones = dones + 1
+
+        if dones < K:
+            return -1
+        else:
+            return tsum
