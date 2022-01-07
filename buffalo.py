@@ -1,3 +1,4 @@
+ 
 A = [11, 7, 10, 9, 13, 14, 10, 15, 12, 10]
 K = 5
 l = K // 2
@@ -59,3 +60,4 @@ for i in range(len(buyed)):
     profits.append(sell[i]-buyed[i])
 
 print(sum(profits))
+ 
