@@ -13,12 +13,14 @@ int main ()
     priority_queue<int> curr;
 
     int sum = 0;
+    int i = 0;
 
-    for (int i = 0; i < n; ++i) {
+    while (i < n) {
         if (curr.size() < k) {
             int var;
             cin >> var;
             curr.push(var);
+            i++;
         } else if (curr.size() == k) {
             int max = curr.top();
             if (max <= 0) {
