@@ -10,7 +10,7 @@ int n = 100002;
 vector<vector<int>> adjList(n+1);
 vector<int> degrees(n+1);
 vector<int> sizes(n+1);
-vector<int> preCum(n+1);
+vector<int> pre(n+1);
 vector<int> depths(n+1);
 
 int mxdepth;
@@ -27,7 +27,7 @@ void dfs (int node, int maxdep, int par) {
             continue;
         }
         sizes[node]++;
-        preCum[i] = node;
+        pre[i] = node;
         dfs(i, maxdep+1, node);
     }
 }
@@ -60,7 +60,7 @@ int main ()
     int mid = (mxdepth+1)>>1;
 
     while (depths[dex] != mid) {
-        dex = preCum[dex];
+        dex = pre[dex];
     }
 
     currRoot = dex; 
