@@ -1,3 +1,4 @@
+
 // Solution to this: https://www.codechef.com/problems/KGP14B
 
 #include <iostream>
