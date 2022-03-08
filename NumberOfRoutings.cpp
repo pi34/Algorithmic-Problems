@@ -1,4 +1,4 @@
-// Solution to this: https://www.iarcs.org.in/inoi/contests/oct2005/Advanced-2.php
+// Solution to this problem: https://www.iarcs.org.in/inoi/contests/oct2005/Advanced-2.php
 
 #include <iostream>
 #include <vector>
