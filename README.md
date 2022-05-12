@@ -1,3 +1,3 @@
 # Algorithmic-Problems
 
-Repository where I practice problems.
+Repository where I practice algorithm problems.
