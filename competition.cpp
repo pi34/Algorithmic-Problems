@@ -1,6 +1,7 @@
 // https://oj.uz/problem/view/NOI17_bestplace
 
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
