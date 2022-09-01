@@ -1,3 +1,5 @@
+import math
+
 def pyramid (A):
 
     A.sort()
