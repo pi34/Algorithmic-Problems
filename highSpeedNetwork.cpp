@@ -1,7 +1,7 @@
 // Solution to this: https://www.iarcs.org.in/inoi/contests/aug2005/Advanced-2.php
 
 #include <iostream>
-#include <vector>
+#include <vector.h>
 #include <algorithm>
 #include <string.h>
 
