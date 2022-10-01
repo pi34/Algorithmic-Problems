@@ -1,6 +1,8 @@
 // Solution to this problem: https://www.codechef.com/problems/TLG.
 
 #include <iostream>
+#include <vector>
+
 using namespace std;
 
 int main() {
